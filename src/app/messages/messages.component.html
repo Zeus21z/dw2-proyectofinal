@@ -1,0 +1,8 @@
+<div *ngIf="messageService.messages.length"> <!-- Verifica si hay mensajes en el servicio -->
+        <h2>Mensajes</h2> <!-- Encabezado -->
+        <button class="clear" (click)="messageService.clear()">Borrar</button> <!-- Botón para borrar mensajes -->
+        <div *ngFor='let message of messageService.messages'> <!-- Bucle para mostrar cada mensaje -->
+            {{message}} <!-- Muestra el mensaje -->
+        </div>
+    </div>
+    
